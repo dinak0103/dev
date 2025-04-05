@@ -183,6 +183,8 @@ img {
 .main__title {
   color: var(--first-color-alt);
   font-size: var(--h1-font-size);
+  text-transform: uppercase;
+  font-weight: var(--font-medium);
 }
 
 .main__description {
