@@ -142,11 +142,10 @@ img {
 .top__container {
   text-align: center;
   justify-content: center;
-  padding: 16px;
+  padding: 16px 38px;
   border: 1px solid #302B49;
   border-radius: 1rem;
-  width: 280px;
-  justify-self: center!important; 
+  justify-self: center; 
 }
 
 .top__container__title {
