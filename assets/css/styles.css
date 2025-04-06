@@ -207,16 +207,17 @@ img {
 
 .cases__home__container {
   display: flex;
-  gap: 8px;
+  gap: 16px;
   overflow: auto;
   white-space: nowrap;
+  padding: 1rem;
 }
 
 .case__card {
   background-color: var(--body-color);
   border-radius: 1rem;
   padding: 16px;
-  box-shadow: 0px 4px 28px 0 rgba(147,134,247,0.10);
+  box-shadow: 0px 0px 4px 0 rgba(147,134,247,1);
 }
 
 .case__title {
@@ -255,6 +256,53 @@ img {
   align-items: center;
   border-radius: 100%;
   justify-self: end;
+}
+
+.rectanglepurple {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+.rectanglegreen {
+  position: absolute;
+  right: -150px;
+  top: 100px;
+  overflow: auto;
+}
+
+.cta__container {
+  padding: 40px 0;
+  text-align: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: linear-gradient(to bottom, #9386F7, #191334);
+}
+
+.cta__title {
+  text-transform: uppercase;
+  font-family: var(--title-font);
+  font-weight: var(--font-medium);
+  font-size: var(--h2-font-size);
+  line-height: 100%;
+}
+
+.top__container__cta {
+  border: 1px solid #9386F7;
+}
+
+.main__button {
+  background-color: var(--first-color);
+  color: var(--body-color);
+  padding: 16px;
+  width: 174px;
+  justify-self: center;
+  font-family: var(--title-font);
+  font-weight: var(--font-medium);
+  font-size: var(--button-font-size);
+  border-radius: 16px;
+  box-shadow: 0px 0px 16px 0 rgba(210,255,0,0.4);
 }
 
 /*=============== FOOTER ===============*/
