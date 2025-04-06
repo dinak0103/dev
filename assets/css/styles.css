@@ -21,7 +21,7 @@
   --h4-font-size: 1rem;
   --normal-font-size: .875rem;
   --small-font-size: 0.75rem;
-  --button-font-size: 1rem;
+  --button-font-size: 1.125rem;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -236,14 +236,29 @@ img {
   border-radius: 8px;
 }
 
+.about__home__description {
+  font-family: var(--body-font);
+  font-weight: var(--font-regular);
+  font-size: var(--h3-font-size);
+  line-height: 160%;
+}
 
-/*=============== BUTTON ===============*/
-
-
-
-
+.circle__button {
+  font-family: var(--title-font);
+  font-size: var(--button-font-size);
+  color: var(--text-color);
+  background-color: var(--first-color-alt);
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  justify-self: end;
+}
 
 /*=============== FOOTER ===============*/
+
 
 
 /*=============== BREAKPOINTS ===============*/
