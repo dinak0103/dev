@@ -205,6 +205,13 @@ img {
   top: 600px;
 }
 
+.cases__home__container {
+  display: flex;
+  gap: 8px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
 .case__card {
   background-color: var(--body-color);
   border-radius: 1rem;
