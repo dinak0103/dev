@@ -114,6 +114,17 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.36); /* optional dark tint */
+  z-index: 10;
+  display: none;
+}
+
 .header {
   position: fixed;
   width: 100%;
