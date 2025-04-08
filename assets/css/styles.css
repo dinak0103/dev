@@ -90,7 +90,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1024px;
+  max-width: 1200px;
   margin-inline: 1.5rem;
 }
 
@@ -205,14 +205,6 @@ img {
   top: 600px;
 }
 
-.cases__home__container {
-  display: flex;
-  gap: 16px;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 1rem;
-}
-
 .case__card {
   background-color: var(--body-color);
   border-radius: 1rem;
@@ -243,6 +235,7 @@ img {
   font-size: var(--h3-font-size);
   line-height: 160%;
 }
+
 
 .circle__button {
   font-family: var(--title-font);
@@ -305,6 +298,23 @@ img {
   box-shadow: 0px 0px 16px 0 rgba(210,255,0,0.4);
 }
 
+.footer__container {
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.footer__data,
+.social__link {
+  font-size: var(--small-font-size);
+  line-height: 160%;
+  color: var(--text-color);
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
 /*=============== FOOTER ===============*/
 
 
@@ -334,7 +344,16 @@ img {
 /* For medium devices */
 @media screen and (min-width: 768px){
 
- 
+  .about__home__container,
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .socials {
+    justify-self: end;
+  }
+
 }
 
 
@@ -345,4 +364,6 @@ img {
   .container {
     margin-inline: auto;
   }
+
+
 }
