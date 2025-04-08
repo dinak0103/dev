@@ -26,3 +26,14 @@ const linkAction = () =>{
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
+const playBtn = document.getElementById('playBtn');
+const videoPopup = document.getElementById('videoPopup');
+
+playBtn.addEventListener('click', () => {
+  videoPopup.style.display = 'flex';
+});
+
+videoPopup.addEventListener('click', () => {
+  videoPopup.style.display = 'none';
+  document.getElementById('youtubePlayer').src = document.getElementById('youtubePlayer').src; // stop video
+});
