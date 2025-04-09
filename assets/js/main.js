@@ -28,6 +28,11 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 const playBtn = document.getElementById('playBtn');
 const videoPopup = document.getElementById('videoPopup');
+const videoThumb = document.getElementById('videoThumb');
+
+videoThumb.addEventListener('click', () => {
+    videoPopup.style.display = 'flex';
+  });
 
 playBtn.addEventListener('click', () => {
   videoPopup.style.display = 'flex';
