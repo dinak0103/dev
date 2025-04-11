@@ -17,6 +17,11 @@ if(navClose){
     })
 }
 
+overlay.addEventListener('click', () => {
+    navMenu.classList.remove('show-menu');
+    overlay.style.display = 'none';
+  });
+
 const navLink = document.querySelectorAll('.menu__link')
 
 const linkAction = () =>{
