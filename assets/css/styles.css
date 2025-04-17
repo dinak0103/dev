@@ -457,6 +457,10 @@ img {
 }
 
 
+/*=============== WORK ===============*/
+.case__study__work__title {
+  color: var(--first-color-alt);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
