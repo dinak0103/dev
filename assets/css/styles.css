@@ -104,6 +104,14 @@ img {
 
 .main {
   overflow: hidden;
+  flex: 1;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -460,6 +468,11 @@ img {
 /*=============== WORK ===============*/
 .case__study__work__title {
   color: var(--first-color-alt);
+}
+
+.case__study__list {
+  list-style: disc;
+  margin-left: 16px;
 }
 
 /*=============== BREAKPOINTS ===============*/
