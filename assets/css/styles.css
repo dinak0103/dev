@@ -104,14 +104,13 @@ img {
 
 .main {
   overflow: hidden;
-  flex: 1;
+  flex: 1 1 auto;
 }
 
 .wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -275,7 +274,7 @@ img {
   position: absolute;
   z-index: -1;
   right: 0;
-  top: 600px;
+  top: 300px;
 }
 
 .case__card {
