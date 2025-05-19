@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Explore the portfolio of Dina K, a talented Front-End Developer and UI/UX Designer. Showcasing innovative web designs, landing pages, and user-centric digital experiences crafted with precision and creativity. Let's build something amazing together!">
+      <meta name="description" content="Explore the Picture-in-Picture Web Application by Dinak0103, a simple and interactive tool that demonstrates the Picture-in-Picture API, allowing users to watch videos in a floating, always-on-top window while multitasking.">
       <meta name="keywords" content="Front-End Developer, UI/UX Designer, web design, landing page design, user interface, user experience, responsive design, digital agency, creative portfolio, web development, interactive websites, Figma, HTML, CSS, JavaScript">
 
       <!--=============== FAVICON ===============-->
@@ -12,7 +12,7 @@
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Dina K - Front-End Developer & UI/UX Designer | Creative Web Solutions & Digital Experiences</title>
+      <title>Picture-in-Picture Web Application | Dina K</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
@@ -59,68 +59,90 @@
                <div class="container">
                   <div class="top__container top__home__container grid">
                      <h3 class="top__container__title">
-                        ADVGO42
+                        Picture-in-Picture
                      </h3>
                      <div class="location__data">
                        <p class="location__text">
-                           Full website UI/UX design from scratch
+                           Built using HTML, CSS, JavaScript and Web API
                        </p>
                     </div>
                   </div>
    
                   <div class="image__container grid">
                      <p class="main__description">
-                        Coming soon
+                        The Picture-in-Picture (PiP) project is a web application that demonstrates the use of the Picture-in-Picture Web API to enhance video playback experiences. This case study delves into the project's objectives, implementation, and potential areas for enhancement.
                      </p>
+                     <h3>
+                        Live Demo:
+                     </h3>
+                     <div class="case__btns">
+                        <a href="https://dinak0103.github.io/pictureinpicture/" target="_blank" class="nav__btn">Live Site</a>
+                        <a href="https://github.com/dinak0103/pictureinpicture" target="_blank" class="nav__btn">GitHub</a>
+                     </div>
                   </div>
-   
-                  <!-- <div class="image__container grid">
-                     <p class="main__description">
-                        Chalet Zolotaj Gorka is a cozy vacation retreat offering private houses for rent, each featuring a hot tub and a peaceful natural setting. The client needed a modern, visually appealing website that would attract visitors, provide a smooth booking experience, and reflect the relaxing, luxurious vibe of their properties.
-                     </p>
-                  </div> -->
                </div>
             </section>
    
-            <!-- <section class="section about__section">
+            <section class="section about__section">
                <div class="container grid about__home__container">
                   <div class="grid">
                      <h2>
-                        1. Research & Discovery
+                        Objective
                      </h2>
-                     <h3>
-                        Before jumping into design, I needed to understand:
-                     </h3>
+                     <p>
+                        To create an interactive web application that allows users to play videos in a floating, always-on-top window, enabling multitasking without interrupting video playback.
+                     </p>
+                     <h2>
+                        Technologies Used:
+                     </h2>
+                     <p>
+                        HTML5, CSS3, JavaScript, Picture-in-Picture Web API
+                     </p>
+                     <h2>
+                        Implementation Details
+                     </h2>
                      <ul class="case__study__list grid">
-                        <li>
-                           The target audience (families, couples, groups of friends looking for nature + comfort)
-                        </li>
-                        <li>
-                           The competitive landscape (how similar rental services present themselves online)
-                        </li>
-                        <li>
-                           The client’s goals: drive more direct bookings, build brand trust, and convey a premium yet cozy experience.
-                        </li>
-                     </ul>
-                     <h3>
-                        Key Insights:
-                     </h3>
-                        <ul class="case__study__list grid">
                            <li>
-                              Photos and aesthetics are crucial in the booking decision.
+                          Video Element: An embedded video player that supports standard controls (play, pause, etc.).
                            </li>
                            <li>
-                              Users want fast access to availability and pricing.
-                           </li>
-                           <li>
-                              The vibe should feel natural, relaxing, and trustworthy.
+                            PiP Activation Button: A button labeled "Start" that, when clicked, triggers the PiP mode
                            </li>
                         </ul>
                   </div>
                   
-                  <img src="" alt="">
+                  <img src="assets/img/pip.png" alt="">
                </div>
-            </section> -->
+            </section>
+
+            <section class="section about__section">
+               <div class="container grid about__home__container">
+                  <div class="grid case__oder">
+                     <h2>
+                        Core Functionality:
+                     </h2>
+                     <p>
+                        The JavaScript code listens for the button click event and invokes the requestPictureInPicture() method on the video element. This method prompts the browser to display the video in a separate, floating window that remains on top of other windows, allowing users to continue watching while interacting with other applications or tabs.
+                     </p>
+                     <h2>
+                        Strengths
+                     </h2>
+                        <ul class="case__study__list grid">
+                           <li>
+                            Simplicity: The application focuses on a single, clear functionality, making it easy to understand and use.
+                           </li>
+                           <li>
+                            Educational Value: Serves as an excellent example for developers learning about the Picture-in-Picture API and its practical applications.
+                           </li>
+                           <li>
+                            Responsive Design: The interface adapts well to different screen sizes, enhancing usability across devices.
+                           </li>
+                        </ul>
+                  </div>
+                  
+                  <img src="assets/img/pip2.png" alt="">
+               </div>
+            </section>
    
             <section class="section cta____section">
                <div class="container grid cta__container">

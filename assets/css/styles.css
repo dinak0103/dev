@@ -67,6 +67,7 @@ body {
 h1, h2, h3 {
   line-height: 100%;
   font-family: var(--title-font);
+  letter-spacing: 1px;
 }
 
 p {
@@ -184,6 +185,7 @@ img {
   font-family: var(--title-font);
   color: var(--first-color);
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .nav__close {
@@ -207,6 +209,7 @@ img {
   box-shadow: 0px 0px 16px 0 rgba(210,255,0,0.4);
   text-align: center;
   width: 174px;
+  letter-spacing: 1px;
 }
 
 /*=============== HOME ===============*/
@@ -237,6 +240,7 @@ img {
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
   line-height: 160%;
+  letter-spacing: 1px;
 }
 
 .image__container {
@@ -263,6 +267,7 @@ img {
   color: var(--first-color);
   font-size: var(--h3-font-size);
   line-height: 100%;
+  letter-spacing: 1px;
 }
 
 .left__elipse {
@@ -289,6 +294,7 @@ img {
   font-family: var(--title-font);
   font-weight: var(--font-medium);
   font-size: var(--h4-font-size);
+  letter-spacing: 1px;
 }
 
 .case__description {
@@ -322,6 +328,7 @@ img {
   align-items: center;
   border-radius: 100%;
   justify-self: end;
+  letter-spacing: 1px;
 }
 
 .rectanglepurple {
@@ -352,6 +359,7 @@ img {
   font-weight: var(--font-medium);
   font-size: var(--h2-font-size);
   line-height: 100%;
+  letter-spacing: 1px;
 }
 
 .top__container__cta {
@@ -370,6 +378,7 @@ img {
   border-radius: 16px;
   box-shadow: 0px 0px 16px 0 rgba(210,255,0,0.4);
   text-align: center;
+  letter-spacing: 1px;
 }
 
 /*=============== FOOTER ===============*/
@@ -474,6 +483,12 @@ img {
   margin-left: 16px;
 }
 
+.case__btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px){
@@ -515,6 +530,10 @@ img {
 
   .top__home__container {
     margin-top: 4rem;
+  }
+
+  .case__oder {
+    order: 1;
   }
 
 }
