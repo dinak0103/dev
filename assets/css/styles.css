@@ -67,6 +67,7 @@ body {
 h1, h2, h3 {
   line-height: 100%;
   font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
 }
 
 p {
@@ -473,6 +474,7 @@ img {
 .case__study__list {
   list-style: disc;
   margin-left: 16px;
+  line-height: 1.5;
 }
 
 .case__btns {
