@@ -420,6 +420,26 @@ img {
   position: relative;
 }
 
+.skillset__container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.skillset__container h2 {
+  color: #dbdad9;
+}
+
+.skillset {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.skill {
+  width: 56px;
+}
+
 .resume__title {
   color: var(--first-color);
   font-size: var(--h4-font-size);
