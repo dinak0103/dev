@@ -229,6 +229,8 @@ img {
   border: 1px solid var(--text-color);
   border-radius: 1rem;
   justify-self: center; 
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .top__container__title {
