@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
 /*=============== VARIABLES CSS ===============*/
@@ -9,15 +9,15 @@
   --first-color: #242424;
   --first-color-alt: #EFEEEC;
   --text-color: #242424;
-   --text-color--light: #666563;
+  --text-color--light: #666563;
   --body-color: #ffffff;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --title-font: "Kanit", sans-serif;
-  --body-font: "Rubik", sans-serif;
+  --title-font: "Rubik", sans-serif;
+  --body-font: "Montserrat", sans-serif;
   --h1-font-size: 2.5rem;
-  --h2-font-size: 2.25rem;
+  --h2-font-size: 2rem;
   --h3-font-size: 1.25rem;
   --h4-font-size: 1rem;
   --normal-font-size: .875rem;
@@ -38,7 +38,7 @@
 @media screen and (min-width: 1150px) {
   :root {
     --h1-font-size: 3rem;
-    --h2-font-size: 3rem;
+    --h2-font-size: 2.25rem;
     --h3-font-size: 1.75rem;
     --h4-font-size: 1.25rem;
     --normal-font-size: 1rem;
@@ -72,7 +72,7 @@ h1, h2, h3 {
 }
 
 p {
-  line-height: 200%;
+  line-height: 160%;
 }
 
 ul {
@@ -187,6 +187,11 @@ img {
   font-family: var(--title-font);
   color: var(--first-color);
   text-transform: uppercase;
+  transition: all .3s;
+}
+
+.nav__link:hover {
+  color: var(--text-color--light);
 }
 
 .nav__close {
@@ -209,13 +214,18 @@ img {
   border-radius: 16px;
   text-align: center;
   width: 174px;
+  transition: all .3s;
+}
+
+.nav__btn:hover {
+  background-color: #000;
 }
 
 /*=============== HOME ===============*/
 .top__container {
   text-align: center;
   justify-content: center;
-  padding: 16px 38px;
+  padding: 12px 24px;
   border: 1px solid var(--text-color);
   border-radius: 1rem;
   justify-self: center; 
@@ -238,7 +248,6 @@ img {
   font-family: var(--body-font);
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
-  line-height: 160%;
 }
 
 .image__container {
@@ -265,11 +274,21 @@ img {
   color: var(--text-color);
 }
 
+.cases__home__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .case__card {
   border: 2px solid var(--first-color-alt);
   border-radius: 1rem;
   padding: 16px;
   color: var(--text-color);
+  transition: all .3s;
+  align-content: space-between;
+  max-width: 380px;
 }
 
 .case__card:hover {
@@ -286,34 +305,11 @@ img {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--font-regular);
-  line-height: 160%;
   color: var(--text-color--light);
 }
 
 .case__image__card {
   border-radius: 8px;
-}
-
-.about__home__description {
-  font-family: var(--body-font);
-  font-weight: var(--font-regular);
-  font-size: var(--h3-font-size);
-  line-height: 160%;
-}
-
-
-.circle__button {
-  font-family: var(--title-font);
-  font-size: var(--button-font-size);
-  color: var(--body-color);
-  background-color: var(--text-color);
-  width: 160px;
-  height: 160px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  justify-self: end;
 }
 
 .cta__container {
@@ -343,9 +339,18 @@ img {
   font-size: var(--button-font-size);
   border-radius: 16px;
   text-align: center;
+  transition: all .3s;
+}
+
+.main__button:hover {
+  background-color: #000;
 }
 
 /*=============== FOOTER ===============*/
+
+.footer {
+  padding-bottom: 4rem;
+}
 
 .footer__container {
   justify-content: center;
@@ -355,7 +360,6 @@ img {
 .footer__data,
 .social__link {
   font-size: var(--small-font-size);
-  line-height: 160%;
   color: var(--text-color);
 }
 
@@ -367,11 +371,6 @@ img {
 
 
 /*=============== ABOUT ===============*/
-.about__description {
-  font-size: var(--h4-font-size);
-  line-height: 160%;
-}
-
 .video-container {
   position: relative;
   display: inline-block;
@@ -413,6 +412,11 @@ img {
   position: relative;
 }
 
+.video__description {
+  color: var(--text-color--light);
+  font-size: var(--small-font-size);
+}
+
 .skillset__container {
   text-align: center;
   margin-top: 40px;
@@ -437,19 +441,17 @@ img {
   color: var(--first-color);
   font-size: var(--h4-font-size);
   text-transform: uppercase;
-  font-weight: var(--font-medium);
 }
 
 .resume__card {
   padding: 16px;
   border-radius: 16px;
-  border: 1px solid #302B49;
+  border: 1px solid var(--text-color--light);
 }
 
 .resume__card__title {
   color: var(--first-color);
   text-transform: uppercase;
-  font-weight: var(--font-medium);
 }
 
 .resume__card__subtitle {
@@ -477,6 +479,26 @@ img {
   margin-top: 1rem;
 }
 
+/*=============== CONTACT ===============*/
+.contact__container {
+  gap: 3rem;
+}
+
+.contact__heading {
+  text-transform: uppercase;
+  font-size: var(--small-font-size);
+}
+
+.contact__link {
+  font-size: var(--h4-font-size);
+  color: var(--text-color);
+  transition: all .3s;
+}
+
+.contact__link:hover {
+  color: var(--text-color--light);
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px){
@@ -502,18 +524,15 @@ img {
 /* For medium devices */
 @media screen and (min-width: 768px){
 
-  .about__home__container,
-  .footer__container {
+  .about__container,
+  .footer__container,
+  .case__study__data {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 
   .socials {
     justify-self: end;
-  }
-
-  .cases__home__container {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .top__home__container {
@@ -523,6 +542,12 @@ img {
   .case__oder {
     order: 1;
   }
+
+  .btn {
+    justify-self: start;
+  }
+
+
 
 }
 
@@ -556,6 +581,11 @@ img {
     color: var(--first-color);
     font-size: var(--h4-font-size);
     font-weight: var(--font-bold);
+    transition: all .3s;
+  }
+
+  .nav__logo:hover {
+    color: var(--text-color--light);
   }
 
   .nav__menu {
@@ -585,6 +615,10 @@ img {
   .nav__btn {
     padding: 8px;
     width: 160px;
+  }
+
+  .footer {
+    padding-bottom: 0rem;
   }
 
 }

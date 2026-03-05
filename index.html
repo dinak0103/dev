@@ -12,7 +12,7 @@
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Dina K - Frontend Developer & UI/UX Designer | Creative Web Solutions & Digital Experiences</title>
+      <title>Dina K. - Frontend Developer & UI/UX Designer | Creative Web Solutions & Digital Experiences</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
@@ -30,14 +30,14 @@
                           <a href="index.html" class="nav__link">Home</a>
                       </li>
                       <li>
-                          <a href="work.html" class="nav__link">Work</a>
+                          <a href="work/index.html" class="nav__link">Work</a>
                       </li>
                       <li>
-                          <a href="about.html" class="nav__link">About</a>
+                          <a href="about/index.html" class="nav__link">About</a>
                       </li>
                   </ul>
    
-                  <a href="mailto:dziyanakantsevich@gmail.com" target="_blank" class="nav__btn">Hire Me!</a>
+                  <a href="contact/index.html" class="nav__btn">Hire Me!</a>
    
                   <div class="nav__close" id="nav-close">
                       <img src="assets/img/close-large-line.svg" alt="close">
@@ -76,59 +76,71 @@
             </section>
    
             <section class="section case__section">
-               <div class="container cases__home__container grid">
-                  <div>
-                     <a href="chalet.html" class="case__card grid">
-                        <div class="case__title__container grid">
-                           <h3 class="case__title">
-                              Chalet Zolotaj Gorka
-                           </h3>
-                           <p class="case__description">
-                              Designed the full UI/UX for a rental website, focusing on a clean, responsive booking experience.
-                           </p>
-                        </div>
-                        <img src="assets/img/chalet.png" alt="case image" class="case__image__card">
-                     </a>
-                  </div>
-   
-                  <div>
-                     <a href="advgo.html" class="case__card grid">
-                        <div class="case__title__container grid">
-                           <h3 class="case__title">
-                              ADVGO42
-                           </h3>
-                           <p class="case__description">
-                              Designed the full UI/UX for Advgo42’s website, creating a modern, responsive platform to boost credibility and drive partner conversions.
-                           </p>
-                        </div>
-                        <img src="assets/img/advgocase.jpg" alt="case image" class="case__image__card">
-                     </a>
-                  </div>
-   
-                  <div>
-                     <a href="haggberg.html" class="case__card grid">
-                        <div class="case__title__container grid">
-                           <h3 class="case__title">
-                              HÄGGBERG
-                           </h3>
-                           <p class="case__description">
-                              Designed the entire UI/UX for Häggberg Kakel’s new website, creating a modern, user-friendly experience across all devices.
-                           </p>
-                        </div>
-                        <img src="assets/img/haggberg.png" alt="case image" class="case__image__card">
-                     </a>
-                  </div>
+               <div class="container cases__home__container">
+                  <a href="/work/chalet.html" class="case__card grid">
+                     <div class="case__title__container grid">
+                        <h3 class="case__title">
+                           Chalet Zolotaj Gorka
+                        </h3>
+                        <p class="case__description">
+                           Designed the full UI/UX for a rental website, focusing on a clean, responsive booking experience.
+                        </p>
+                     </div>
+                     <img src="assets/img/chalet.png" alt="case image" class="case__image__card">
+                  </a>
+                  <a href="/work/advgo.html" class="case__card grid">
+                     <div class="case__title__container grid">
+                        <h3 class="case__title">
+                           ADVGO42
+                        </h3>
+                        <p class="case__description">
+                           Designed the full UI/UX for Advgo42’s website, creating a modern, responsive platform to boost credibility and drive partner conversions.
+                        </p>
+                     </div>
+                     <img src="assets/img/advgocase.jpg" alt="case image" class="case__image__card">
+                  </a>
+                  <a href="/work/haggberg.html" class="case__card grid">
+                     <div class="case__title__container grid">
+                        <h3 class="case__title">
+                           HÄGGBERG
+                        </h3>
+                        <p class="case__description">
+                           Designed the entire UI/UX for Häggberg Kakel’s new website, creating a modern, user-friendly experience across all devices.
+                        </p>
+                     </div>
+                     <img src="assets/img/haggberg.png" alt="case image" class="case__image__card">
+                  </a>
                </div>
             </section>
    
-            <section class="section about__home__section">
-               <div class="container grid about__home__container">
-                  <p class="about__home__description">
-                     Skilled in wireframing, prototyping, interaction design, and frontend development. Strong expertise in Figma, Webflow, HTML, CSS, JavaScript.
-                  </p>
-                  <a href="about.html" class="circle__button">
-                     About Me
-                  </a>
+            <section class="section about__section">
+               <div class="container grid about__container">
+                  <div class="video__container">
+                   <div class="video-container">
+                       <img src="assets/img/th.jpg" alt="Video thumbnail" class="video-thumb" id="videoThumb">
+                       <img src="assets/img/play-large-fill.svg" alt="play btn" class="play-button" id="playBtn">
+                     </div>
+                     
+                     <div class="video-popup" id="videoPopup">
+                       <div class="video-popup-inner">
+                         <iframe id="youtubePlayer" width="100%" height="100%" 
+                           src="https://www.youtube.com/embed/pwCXj2EMUvw?si=QJY01Ck-RshHNVPX" 
+                           frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                       </div>
+                     </div>
+                     <p class="video__description">
+                        Watch a short introduction about me
+                     </p>
+                  </div>
+                  <div class="about__info grid">
+                     <p class="about__description">
+                        Frontend Engineer with a strong UX background and 4+ years of experience designing and building user-centered digital products. I combine design thinking with front-end development to create intuitive, visually engaging, and high-performing interfaces.
+                     </p>
+                     <p class="about__description">
+                        My expertise includes UX research, wireframing, prototyping, interaction design, and frontend development, which allows me to bridge the gap between design and implementation. I work confidently with Figma, HTML, CSS, and JavaScript, and have experience developing scalable design systems that ensure consistency, accessibility, and efficiency across products.
+                     </p>
+                     <a href="about/index.html" class="main__button btn">About Me</a>
+                  </div>
                </div>
             </section>
    
@@ -137,8 +149,8 @@
                   <h2 class="cta__title">
                      Let’s work together
                   </h2>
-                  <div class="contact__links">
-                     <p class="contact__link">
+                  <div class="cta__links">
+                     <p class="cta__link">
                         dziyanakantsevich@gmail.com
                      </p>
                   </div>
@@ -162,7 +174,7 @@
          <footer class="footer">
             <div class="footer__container container grid">
                <p class="footer__data">
-                  © Dina K. 2025. All rights reserved.
+                  © Dina K. 2026. All rights reserved.
                </p>
                <div class="socials">
                   <a href="https://www.linkedin.com/in/dinakontsevich/" target="_blank" class="social__link">LinkedIn</a>

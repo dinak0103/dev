@@ -3,16 +3,16 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Experience a fun and interactive drum kit. Click or press keys to play drum sounds instantly. Built using HTML, CSS, and JavaScript by Dina K.">
+      <meta name="description" content="Explore the Picture-in-Picture Web Application by Dinak0103, a simple and interactive tool that demonstrates the Picture-in-Picture API, allowing users to watch videos in a floating, always-on-top window while multitasking.">
       <meta name="keywords" content="Front-End Developer, UI/UX Designer, web design, landing page design, user interface, user experience, responsive design, digital agency, creative portfolio, web development, interactive websites, Figma, HTML, CSS, JavaScript">
 
       <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+      <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
 
       <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="/assets/css/styles.css">
 
-      <title>Interactive Drum Kit - Play Drums Online | Dina K</title>
+      <title>Picture-in-Picture Web Application | Dina K</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
@@ -22,31 +22,31 @@
          <header class="header" id="header">
             <nav class="nav container">
                <div class="logo">
-                  <a href="index.html" class="nav__logo">Dina K.</a>
+                  <a href="/index.html" class="nav__logo">Dina K.</a>
                </div>
                
                <div class="nav__menu grid" id="nav-menu">
                   <ul class="nav__list">
                       <li>
-                          <a href="index.html" class="nav__link">Home</a>
+                          <a href="/index.html" class="nav__link">Home</a>
                       </li>
                       <li>
-                          <a href="work.html" class="nav__link">Work</a>
+                          <a href="/work/index.html" class="nav__link">Work</a>
                       </li>
                       <li>
-                          <a href="about.html" class="nav__link">About</a>
+                          <a href="/about/index.html" class="nav__link">About</a>
                       </li>
                   </ul>
    
-                  <a href="mailto:dziyanakantsevich@gmail.com" target="_blank" class="nav__btn">Hire Me!</a>
+                  <a href="/contact/index.html" class="nav__btn">Hire Me!</a>
    
                   <div class="nav__close" id="nav-close">
-                      <img src="assets/img/close-large-line.svg" alt="close">
+                      <img src="/assets/img/close-large-line.svg" alt="close">
                   </div>
                </div>
    
                <div class="toggle" id="toggle">
-                  <img src="assets/img/menu-line.svg" alt="menu">
+                  <img src="/assets/img/menu-line.svg" alt="menu">
                </div>
             </nav>
          </header>
@@ -57,95 +57,85 @@
                <div class="container">
                   <div class="top__container top__home__container grid">
                      <h3 class="top__container__title">
-                       Drum Kit
+                        Picture-in-Picture
                      </h3>
                      <div class="location__data">
                        <p class="location__text">
-                           Built using HTML, CSS, and JavaScript
+                           Built using HTML, CSS, JavaScript and Web API
                        </p>
                     </div>
                   </div>
    
                   <div class="image__container grid">
                      <p class="main__description">
-                        The Drum Kit project is an interactive web application that emulates a virtual drum set. Users can play drum sounds by clicking on-screen buttons or pressing corresponding keys on their keyboard. This project showcases fundamental web development skills, including HTML, CSS, and JavaScript.
+                        The Picture-in-Picture (PiP) project is a web application that demonstrates the use of the Picture-in-Picture Web API to enhance video playback experiences. 
                      </p>
                      <div class="case__btns">
-                        <a href="https://dinak0103.github.io/drum/" target="_blank" class="nav__btn">Live Site</a>
-                        <a href="https://github.com/dinak0103/drum" target="_blank" class="nav__btn">GitHub</a>
+                        <a href="https://dinak0103.github.io/pictureinpicture/" target="_blank" class="nav__btn">Live Site</a>
+                        <a href="https://github.com/dinak0103/pictureinpicture" target="_blank" class="nav__btn">GitHub</a>
                      </div>
                   </div>
                </div>
             </section>
    
             <section class="section about__section">
-               <div class="container grid about__home__container">
+               <div class="container grid case__study__data">
                   <div class="grid">
                      <h2>
-                        Objectives
+                        Objective
+                     </h2>
+                     <p>
+                        To create an interactive web application that allows users to play videos in a floating, always-on-top window, enabling multitasking without interrupting video playback.
+                     </p>
+                     <h2>
+                        Technologies Used:
+                     </h2>
+                     <p>
+                        HTML5, CSS3, JavaScript, Picture-in-Picture Web API
+                     </p>
+                     <h2>
+                        Implementation Details
                      </h2>
                      <ul class="case__study__list grid">
-                        <li>
-                           Interactive Learning: To create an engaging platform for users to interact with and learn about drum sounds.
-                        </li>
-                        <li>
-                           Skill Demonstration: To demonstrate proficiency in front-end web development technologies.
-                        </li>
-                        <li>
-                           User Engagement: To provide a fun and responsive user experience that encourages exploration.
-                        </li>
-                     </ul>
-                     <h2>
-                        Features
-                     </h2>
-                        <ul class="case__study__list grid">
                            <li>
-                              Keyboard Interaction: Users can press specific keys (w, a, s, d, j, k, l) to produce different drum sounds.
+                          Video Element: An embedded video player that supports standard controls (play, pause, etc.).
                            </li>
                            <li>
-                              Mouse Interaction: Clickable buttons on the webpage allow users to play drum sounds with a mouse.
-                           </li>
-                           <li>
-                              Visual Feedback: Buttons provide visual cues when activated, enhancing user engagement.
+                            PiP Activation Button: A button labeled "Start" that, when clicked, triggers the PiP mode
                            </li>
                         </ul>
                   </div>
                   
-                  <img src="assets/img/drum.png" alt="">
+                  <img src="/assets/img/pip.png" alt="">
                </div>
             </section>
 
             <section class="section about__section">
-               <div class="container grid about__home__container">
+               <div class="container grid case__study__data">
                   <div class="grid case__oder">
                      <h2>
-                  Technical Implementation
+                        Core Functionality:
                      </h2>
-                     <ul class="case__study__list grid">
-                        <li>
-                           HTML: Structures the webpage with buttons representing different drum parts.
-                        </li>
-                        <li>
-                          CSS: Styles the buttons and layout, providing visual appeal and responsive design.
-                        </li>
-                        <li>
-                           JavaScript: Handles event listeners for both mouse clicks and keyboard presses, triggering corresponding drum sounds and animations.
-                        </li>
-                     </ul>
+                     <p>
+                        The JavaScript code listens for the button click event and invokes the requestPictureInPicture() method on the video element. This method prompts the browser to display the video in a separate, floating window that remains on top of other windows, allowing users to continue watching while interacting with other applications or tabs.
+                     </p>
                      <h2>
-             Challenges and Solutions
+                        Strengths
                      </h2>
                         <ul class="case__study__list grid">
                            <li>
-                          Event Handling: Ensuring that both mouse and keyboard events are accurately captured and processed. <br> Solution: Implemented event listeners for both 'click' and 'keydown' events, mapping them to the same sound functions.
+                            Simplicity: The application focuses on a single, clear functionality, making it easy to understand and use.
                            </li>
                            <li>
-                            Responsive Design: Making sure the application works seamlessly across different devices and screen sizes. <br> Solution: Utilized flexible CSS layouts and media queries to adapt the interface accordingly.
+                            Educational Value: Serves as an excellent example for developers learning about the Picture-in-Picture API and its practical applications.
+                           </li>
+                           <li>
+                            Responsive Design: The interface adapts well to different screen sizes, enhancing usability across devices.
                            </li>
                         </ul>
                   </div>
                   
-                  <img src="assets/img/drum2.png" alt="">
+                  <img src="/assets/img/pip2.png" alt="">
                </div>
             </section>
    
@@ -154,8 +144,8 @@
                   <h2 class="cta__title">
                      Let’s work together
                   </h2>
-                  <div class="contact__links">
-                     <p class="contact__link">
+                  <div class="cta__links">
+                     <p class="cta__link">
                         dziyanakantsevich@gmail.com
                      </p>
                   </div>
@@ -164,7 +154,7 @@
                         Frontend developer <br> UI/UX Designer
                      </h3>
                      <div class="location__data">
-                        <img src="assets/img/global-line.svg" alt="globe">
+                        <img src="/assets/img/global-line.svg" alt="globe">
                         <p class="location__text">
                            Available worldwide
                         </p>
@@ -179,7 +169,7 @@
          <footer class="footer">
             <div class="footer__container container grid">
                <p class="footer__data">
-                  © Dina K. 2025. All rights reserved.
+                  © Dina K. 2026. All rights reserved.
                </p>
                <div class="socials">
                   <a href="https://www.linkedin.com/in/dinakontsevich/" target="_blank" class="social__link">LinkedIn</a>
